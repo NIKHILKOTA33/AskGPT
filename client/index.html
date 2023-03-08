@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskGPT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cover.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="external.js"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+      
+          <div class="cover-container">
+      
+            <div class="masthead clearfix">
+              <div class="inner">
+                <div>
+                <h3 class="masthead-brand" >AskGPT</h3>
+                </div>
+              <div>
+                <nav class="nav nav-masthead">
+                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">Contact</a>
+                </nav>
+              </div>
+              </div>
+            </div>
+      
+            <div class="inner cover">
+                <div class="animated animatedFadeInUp fadeInUp">
+              
+              <h1 class="cover-heading">AskGPT</h1>
+              <div class="form-group">
+                <input class="form-control input-lg" id="input1" type="text">
+              </div>
+              <!-- <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p> -->
+              <p class="lead">
+                <button class="btn btn-lg btn-secondary" id="btn" onclick="Ask()">Ask</button>
+              </p>
+              <form>
+                <div class="form-group">
+                  <label for="comment">Question</label>
+                  <textarea class="form-control" rows="2" id="output1" disabled></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Answer</label>
+                    <textarea class="form-control" rows="7" id="output2" disabled></textarea>
+                  </div>
+              </form>
+            </div>
+            </div>
+            <div class="mastfoot">
+              <div class="inner">
+                <p>@AskGPT by NIKHIL KOTA</p>
+              </div>
+            </div>
+      
+          </div>
+      
+        </div>
+      
+      </div>
+      
+</body>
+</html>
