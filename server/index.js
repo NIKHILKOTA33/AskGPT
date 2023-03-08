@@ -6,6 +6,7 @@ const app = express()
 app.use(cors())
 //openai key
 const OPENAI_API_KEY = process.env.OPENAI_API
+const port = process.env.PORT || 3000
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
     organization: "org-ZOUHfvlpopnabColWu5hn7Ns",
@@ -33,4 +34,4 @@ app.post("/chat",(req,res)=>{
         })
       }) 
 })
-app.listen(3000)
+app.listen(port)
