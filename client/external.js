@@ -4,7 +4,7 @@ const question = document.getElementById("input1").value;
 document.getElementById("input1").value = "";
 document.getElementById("output1").innerHTML =question;
 document.getElementById("output2").innerHTML = "typing...";
-axios.post("http://localhost:3000/chat",{
+axios.post("https://askserver02.onrender.com/chat",{
     question,
 }).then((response)=>{
     
